@@ -1667,7 +1667,11 @@ static int acm_suspend(struct usb_interface *intf, pm_message_t message)
 	if (cnt)
 		return 0;
 
+<<<<<<< HEAD
 	acm_poison_urbs(acm);
+=======
+	acm_kill_urbs(acm);
+>>>>>>> 7d277086c254 (Merge tag 'LA.UM.9.15.r1-02200-KAMORTA.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.19)
 	cancel_delayed_work_sync(&acm->dwork);
 	acm->urbs_in_error_delay = 0;
 

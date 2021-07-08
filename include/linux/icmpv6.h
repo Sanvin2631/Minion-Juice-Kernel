@@ -67,7 +67,11 @@ static inline void icmpv6_ndo_send(struct sk_buff *skb_in, u8 type, u8 code, __u
 static inline void icmpv6_send(struct sk_buff *skb,
 			       u8 type, u8 code, __u32 info)
 {
+}
 
+static inline void icmpv6_ndo_send(struct sk_buff *skb,
+				   u8 type, u8 code, __u32 info)
+{
 }
 #endif
 
