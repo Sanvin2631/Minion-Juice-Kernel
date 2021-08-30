@@ -470,9 +470,8 @@ if [ -f version ]; then
 fi;
 
 ui_print "=======================================";
-ui_print "             Chae                    ";
-ui_print "             young.                  ";
-ui_print "             Kernel V4.5             ";
+ui_print "             phoenix                   ";
+ui_print "             Kernel                    ";
 ui_print " =====================================";
 ui_print " ";
 ui_print "- Introducing $(file_getprop anykernel.sh kernel.string)";
@@ -488,7 +487,7 @@ do_devicecheck;
 do_versioncheck;
 do_levelcheck;
 
-ui_print "- Installing Chaeyoung Kernel...";
+ui_print "- Installing Phoenix Kernel...";
 CORE=$($BB grep -oE 'ak.*core.sh' anykernel.sh);
 [ -f tools/$CORE ] || $BB ln -s $AKHOME/tools/ak*-core.sh $AKHOME/tools/$CORE;
 PATH="$AKHOME/bin:$PATH" home=$AKHOME $BB ash anykernel.sh $2;
