@@ -15,7 +15,7 @@ SEND_DIR="${KERNEL_DIR}/telegram.sh"
 PATH="${KERNEL_DIR}/clang/bin:${KERNEL_DIR}/gcc/bin:${KERNEL_DIR}/gcc32/bin:${PATH}"
 VERSION="$(cat arch/arm64/configs/vendor/citrus-perf_defconfig | grep "CONFIG_LOCALVERSION\=" | sed -r 's/.*"(.+)".*/\1/' | sed 's/^.//')"
 export KBUILD_BUILD_HOST=ubuntu
-export KBUILD_BUILD_USER=Phoenix
+export KBUILD_BUILD_USER=Sanvin
 
 # Compile plox
 function compile() {
@@ -38,7 +38,7 @@ function zipping() {
     zip -r9 $VERSION-JUICE-$(date +%Y%m%d-%H%M).zip *
     cd $SEND_DIR   || exit 1
     echo "Changing Dir to Send FIle"
-    ./telegram -t 1858827137:AAFZVaKOjAhjVyCXfiGgL-SK6dp7_lILZIE -c -509071822 -f $REPACK_DIR/$VERSION-JUICE-$(date +%Y%m%d-%H%M).zip "Zip Sent through GithubActions"
+    ./telegram -t 1952191372:AAFhP6XC_hFZeMOY2Ce302NUg4cGjXYH3mE -c -1001574498260 -f $REPACK_DIR/$VERSION-JUICE-$(date +%Y%m%d-%H%M).zip "Zip Sent through GithubActions"
 }
 
 compile
