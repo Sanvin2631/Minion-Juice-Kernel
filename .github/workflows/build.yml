@@ -38,5 +38,5 @@ jobs:
         
       - name: Build
         run: |
-              wget https://raw.githubusercontent.com/phoenix-1708/kernel_poco_citrus/main/build.sh
+              wget https://raw.githubusercontent.com/Sanvin2631/Minion-Juice-Kernel/main/build.sh
               source build.sh
