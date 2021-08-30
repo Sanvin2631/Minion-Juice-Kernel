@@ -1,11 +1,11 @@
 # AnyKernel3 Ramdisk Mod Script
-# osm0sis @ xda-developers
+# Sanvin @ xda-developers
 
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=PhoenixKernel
-maintainer.string=phoenix-1708
+kernel.string=MinionsKernel
+maintainer.string=Sanvin2631
 do.devicecheck=0
 do.modules=0
 do.systemless=1
