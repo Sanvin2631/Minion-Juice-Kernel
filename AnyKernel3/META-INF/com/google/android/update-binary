@@ -1,6 +1,6 @@
 #!/sbin/sh
 # AnyKernel3 Backend (DO NOT CHANGE)
-# osm0sis @ xda-developers
+# Sanvin @ xda-developers
 
 OUTFD=/proc/self/fd/$2;
 ZIPFILE="$3";
@@ -470,16 +470,16 @@ if [ -f version ]; then
 fi;
 
 ui_print "=======================================";
-ui_print "             Chae                    ";
-ui_print "             young.                  ";
-ui_print "             Kernel V4.5             ";
+ui_print "             Minion                    ";
+ui_print "             Juice.                  ";
+ui_print "             Kernel            ";
 ui_print " =====================================";
 ui_print " ";
 ui_print "- Introducing $(file_getprop anykernel.sh kernel.string)";
 ui_print " ";
 ui_print "- Maintainer: $(file_getprop anykernel.sh maintainer.string )";
 ui_print "=======================================";
-ui_print "AnyKernel3 by osm0sis @ xda-developers";
+ui_print "AnyKernel3 by Sanvin @ xda-developers";
 ui_print "=======================================";
 
 setup_env;
@@ -488,7 +488,7 @@ do_devicecheck;
 do_versioncheck;
 do_levelcheck;
 
-ui_print "- Installing Chaeyoung Kernel...";
+ui_print "- Installing Minion Juice Kernel...";
 CORE=$($BB grep -oE 'ak.*core.sh' anykernel.sh);
 [ -f tools/$CORE ] || $BB ln -s $AKHOME/tools/ak*-core.sh $AKHOME/tools/$CORE;
 PATH="$AKHOME/bin:$PATH" home=$AKHOME $BB ash anykernel.sh $2;
@@ -506,4 +506,4 @@ if [ "$(file_getprop anykernel.sh do.cleanup)" == 1 ]; then
 fi;
 
 ui_print " " " " "Done!";
-ui_print " " " " "Chaeyoung Kernel was succesfully installed";
+ui_print " " " " "Minion Juice Kernel was succesfully installed";
