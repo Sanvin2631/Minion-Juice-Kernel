@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Set time zone to Singapore
+#Set time zone to India
 sudo ln -sf /usr/share/zoneinfo/Asia/India /etc/localtime
 echo "Cloning dependencies"
 git clone --depth=1 https://github.com/sohamxda7/llvm-stable clang
@@ -14,7 +14,7 @@ REPACK_DIR="${KERNEL_DIR}/AnyKernel3"
 SEND_DIR="${KERNEL_DIR}/telegram.sh"
 PATH="${KERNEL_DIR}/clang/bin:${KERNEL_DIR}/gcc/bin:${KERNEL_DIR}/gcc32/bin:${PATH}"
 VERSION="$(cat arch/arm64/configs/vendor/citrus-perf_defconfig | grep "CONFIG_LOCALVERSION\=" | sed -r 's/.*"(.+)".*/\1/' | sed 's/^.//')"
-export KBUILD_BUILD_HOST=ubuntu
+export KBUILD_BUILD_HOST=KaliLiux
 export KBUILD_BUILD_USER=Sanvin
 
 # Compile plox
