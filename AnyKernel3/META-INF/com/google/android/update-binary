@@ -472,7 +472,7 @@ fi;
 ui_print "=======================================";
 ui_print "             Minion                    ";
 ui_print "             Juice.                  ";
-ui_print "             Kernel            ";
+ui_print "             Kernel by Sanvin  ";
 ui_print " =====================================";
 ui_print " ";
 ui_print "- Introducing $(file_getprop anykernel.sh kernel.string)";
